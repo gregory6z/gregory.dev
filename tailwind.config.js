@@ -17,6 +17,7 @@ module.exports = {
         "background-dark-900": "#121519",
         "white-blue": "#E4F7FF",
       },
+
       keyframes: {
         slideIn: {
           "0%": { opacity: 0, transform: "translateY(-100%)" },
@@ -24,6 +25,13 @@ module.exports = {
           "100%": {
             opacity: 1,
             transform: "translateY(0)",
+          },
+        },
+        scrollRight: {
+          "0% ": { transform: "translateX(0%)" },
+
+          "50%": {
+            transform: "translateX(-34%)",
           },
         },
         spinCustom: {
@@ -43,6 +51,7 @@ module.exports = {
       },
       animation: {
         slideIn: "slideIn 500ms cubic-bezier(0.4, 0, 0.6, 1)",
+        scrollRightAnimate: "scrollRight 50s linear infinite",
       },
     },
   },
