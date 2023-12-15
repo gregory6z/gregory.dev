@@ -3,9 +3,9 @@ import "./globals.css"
 import { Sora } from "next/font/google"
 
 export const metadata = {
-  title: "Gregory.dev | Developpeur Web",
+  title: "Gregory.dev | Developpeur Web | gregory praxedes",
   description:
-    "Développeur Web | Transformant des idées en expériences numériques exceptionnelles",
+    "Développeur Web | Transformant des idées en expériences numériques exceptionnelles ",
 }
 
 const sora = Sora({
