@@ -94,7 +94,7 @@ export function DevSection() {
             </div>
           </div>
           <Link
-            href={"https://2vhu0iyiuhd.typeform.com/to/VNblNyUc"}
+            href={"https://form.jotform.com/233487539279069"}
             className=" mt-16 flex items-center justify-center gap-2 rounded-md bg-sky-600 px-10 py-4 text-lg font-semibold text-white-blue/90 transition-all hover:bg-sky-700 lg:mx-auto lg:mt-16 lg:max-w-[320px]"
           >
             Demander un devis
