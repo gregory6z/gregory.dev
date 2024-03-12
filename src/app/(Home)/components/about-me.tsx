@@ -1,14 +1,27 @@
+import Jimp from "jimp"
 import Image from "next/image"
 
+import foto from "../../../public/foto.png"
+
+async function generateBlurDataURL(imagePath: string): Promise<string> {
+  const image = await Jimp.read(imagePath)
+  image.resize(32, Jimp.AUTO) // Redimensiona a imagem para uma largura de 32 pixels e altura automática
+  image.blur(3) // Aplica um efeito de desfoque
+  const blurDataURL = await image.getBase64Async(Jimp.AUTO)
+  return blurDataURL
+}
+
 export function AboutMe() {
+  generateBlurDataURL("./public/foto.png")
+
   return (
     <div className="h-full min-h-screen w-full ">
       <div className=" mb-[10rem] flex  h-full w-full px-[1.125rem]  lg:mx-auto lg:mb-[0rem] lg:flex lg:max-w-[1225px]  lg:px-16 xl:px-0 ">
         <div className="mt-[5rem] flex flex-col gap-16 lg:mt-[10rem]  lg:flex-row  lg:items-center lg:gap-8">
           <div className="flex flex-1 flex-col  gap-8">
-            <h1 className=" text-3xl text-white-blue/90 lg:text-5xl ">
+            <h3 className=" text-3xl text-white-blue/90 lg:text-5xl ">
               À propos de moi...
-            </h1>
+            </h3>
 
             <div className="flex flex-col gap-4 lg:text-lg ">
               <p className=" text-white-blue/60 ">
@@ -45,15 +58,19 @@ export function AboutMe() {
             <Image
               className="h-full w-full rounded-md object-cover object-top opacity-90  duration-500 "
               src="/foto.png"
-              alt="Gregory Praxedes"
+              alt="Gregory Praxedes développeur web marseille/aix"
               width={458}
               height={600}
+              placeholder="blur"
+              loading="lazy"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IiNGRkYiLz4KPHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9InVybCgjZ3JhZCkiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMjgiIHkxPSIwIiB4Mj0iMTI4IiB5Mj0iMjU2Ij4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlJSIgc3RvcC1jb2xvcj0iIzAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K"
             ></Image>
             <Image
               className="absolute -bottom-[30%] left-[30%] h-[150px] w-[150px] animate-[spin_24s_ease-in-out_infinite] lg:-bottom-[20%] lg:-left-[20%]  lg:h-[260px] lg:w-[260px] "
               src="/selo.svg"
               alt="timbre Gregory Praxedes"
               width={260}
+              loading="lazy"
               height={260}
             ></Image>
           </div>

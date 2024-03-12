@@ -12,6 +12,7 @@ export function Footer() {
               className="mx-auto"
               width="80"
               height={80}
+              loading="lazy"
               alt={""}
             ></Image>
             <div className="flex flex-col gap-4">

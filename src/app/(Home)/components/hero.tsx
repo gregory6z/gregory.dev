@@ -42,7 +42,8 @@ export function Hero() {
           src="/shape-tec.svg"
           width={1189}
           height={1140}
-          alt={""}
+          loading="lazy"
+          alt={"/shape-tec.svg"}
         ></Image>
       </TextMotion>
       {/* <TextMotion
@@ -55,7 +56,8 @@ export function Hero() {
         src="/shape-up.png"
         width={1440}
         height={252}
-        alt={""}
+        loading="lazy"
+        alt={"font de la section hero"}
       ></Image>
       {/* </TextMotion> */}
 
@@ -76,7 +78,7 @@ export function Hero() {
           src="/logo.svg"
           width={72}
           height={72}
-          alt={"profile-image"}
+          alt={"logo de gregory praxedes"}
         ></Image>
       </header>
       <div className="flex h-full   w-full items-end px-[1.125rem] pb-40 lg:mx-auto  lg:mt-0 lg:flex lg:max-w-[1225px] lg:items-center lg:px-16 xl:px-0  ">
@@ -86,7 +88,7 @@ export function Hero() {
             src="/profile-pic.png"
             width={86}
             height={86}
-            alt={"profile-image"}
+            alt={"photo de profil de gregory praxedes"}
           ></Image>
 
           <TextMotion
@@ -103,21 +105,21 @@ export function Hero() {
 
             <div className="flex flex-col gap-4  ">
               <TextMotion variants={item}>
-                <span className=" text-xl text-sky-400 sm:text-2xl lg:text-3xl">
-                  Developpeur Web et UI Desing
-                </span>
+                <h2 className=" text-xl text-sky-400 sm:text-2xl lg:text-3xl">
+                  Développeur Web et UI Designer
+                </h2>
               </TextMotion>
               <TextMotion variants={item} className="lg:w-[60%] ">
-                <span className="text-base opacity-60 sm:text-lg lg:text-xl ">
-                  Passionné de développement, je donne vie au design avec
-                  impact.
+                <span className="text-pretty text-base opacity-60 sm:text-lg lg:text-xl ">
+                  Créer des sites web qui attirent l'attention et génèrent des
+                  résultats
                 </span>
               </TextMotion>
               <Link
                 href={"https://form.jotform.com/233487539279069"}
-                className=" mt-4 flex items-center justify-center gap-2 rounded-md bg-sky-600 px-10 py-4 text-lg font-semibold text-white-blue/90  transition-all hover:bg-sky-700 lg:max-w-[320px]"
+                className=" mt-4 flex items-center justify-center gap-2 rounded-md bg-sky-600 px-10 py-4 text-lg font-semibold text-white-blue/90  transition-all hover:bg-sky-700 lg:max-w-[360px]"
               >
-                Demander un devis
+                Démarrez avec un devis!
                 <ArrowRight />
               </Link>
             </div>

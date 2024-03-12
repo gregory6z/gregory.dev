@@ -16,7 +16,8 @@ export default function Home() {
         <div className=" flex  h-full  w-[1080px] items-center justify-center overflow-hidden lg:w-[2460px]">
           <Image
             src="/tec.png"
-            alt=""
+            loading="lazy"
+            alt="font de la section développement web"
             className="  h-[6rem] animate-scrollRightAnimate bg-repeat object-cover lg:h-[8rem] lg:w-[3160px]"
             width={3160}
             height={300}
