@@ -1,19 +1,6 @@
-import Jimp from "jimp"
 import Image from "next/image"
 
-import foto from "../../../public/foto.png"
-
-async function generateBlurDataURL(imagePath: string): Promise<string> {
-  const image = await Jimp.read(imagePath)
-  image.resize(32, Jimp.AUTO) // Redimensiona a imagem para uma largura de 32 pixels e altura automática
-  image.blur(3) // Aplica um efeito de desfoque
-  const blurDataURL = await image.getBase64Async(Jimp.AUTO)
-  return blurDataURL
-}
-
 export function AboutMe() {
-  generateBlurDataURL("./public/foto.png")
-
   return (
     <div className="h-full min-h-screen w-full ">
       <div className=" mb-[10rem] flex  h-full w-full px-[1.125rem]  lg:mx-auto lg:mb-[0rem] lg:flex lg:max-w-[1225px]  lg:px-16 xl:px-0 ">
