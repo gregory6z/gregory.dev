@@ -29,6 +29,9 @@ dependencies:
   google:
     specifier: link:@next/third-parties/google
     version: link:@next/third-parties/google
+  gregory.dev:
+    specifier: 'link:'
+    version: 'link:'
   lucide-react:
     specifier: ^0.297.0
     version: 0.297.0(react@18.2.0)

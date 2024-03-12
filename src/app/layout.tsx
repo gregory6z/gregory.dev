@@ -1,6 +1,7 @@
 import "./globals.css"
 
 import { Sora } from "next/font/google"
+import { GoogleAnalytics } from "@next/third-parties/google"
 
 export const metadata = {
   title:
