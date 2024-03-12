@@ -24,6 +24,7 @@ export default function RootLayout({
       <body className="bg-zinc-950 text-white-blue antialiased">
         {children}
       </body>
+      <GoogleAnalytics gaId="G-SXZXXLMC1Z" />
     </html>
   )
 }
