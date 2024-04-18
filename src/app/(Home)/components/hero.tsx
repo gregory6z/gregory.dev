@@ -94,39 +94,28 @@ export function Hero() {
             alt={"photo de profil de gregory praxedes"}
           ></Image>
 
-          <TextMotion
-            variants={container}
-            initial="hidden"
-            animate="show"
-            className="z-10 flex flex-col gap-8"
-          >
-            <TextMotion variants={item}>
-              <h1 className="text-3xl text-white-blue/90 sm:text-6xl lg:text-7xl">
-                Gregory Praxedes
-              </h1>
-            </TextMotion>
+          <h1 className="text-3xl text-white-blue/90 sm:text-6xl lg:text-7xl">
+            Gregory Praxedes
+          </h1>
 
-            <div className="flex flex-col gap-4  ">
-              <TextMotion variants={item}>
-                <h2 className=" text-xl text-sky-400 sm:text-2xl lg:text-3xl">
-                  Développeur Web et UI Designer
-                </h2>
-              </TextMotion>
-              <TextMotion variants={item} className="lg:w-[60%] ">
-                <p className="text-pretty text-base opacity-60 sm:text-lg lg:text-xl ">
-                  Créer des sites web qui attirent l'attention et génèrent des
-                  résultats
-                </p>
-              </TextMotion>
-              <Link
-                href={"https://form.jotform.com/233487539279069"}
-                className=" mt-4 flex items-center justify-center gap-2 rounded-md bg-sky-600 px-10 py-4 text-lg font-semibold text-white-blue/90  transition-all hover:bg-sky-700 lg:max-w-[360px]"
-              >
-                Démarrez avec un devis!
-                <ArrowRight />
-              </Link>
-            </div>
-          </TextMotion>
+          <div className="flex flex-col gap-4  ">
+            <h2 className=" text-xl text-sky-400 sm:text-2xl lg:text-3xl">
+              Développeur Web et UI Designer
+            </h2>
+
+            <p className="text-pretty text-base opacity-60 sm:text-lg lg:text-xl ">
+              Créer des sites web qui attirent l'attention et génèrent des
+              résultats
+            </p>
+
+            <Link
+              href={"https://form.jotform.com/233487539279069"}
+              className=" mt-4 flex items-center justify-center gap-2 rounded-md bg-sky-600 px-10 py-4 text-lg font-semibold text-white-blue/90  transition-all hover:bg-sky-700 lg:max-w-[360px]"
+            >
+              Démarrez avec un devis!
+              <ArrowRight />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
