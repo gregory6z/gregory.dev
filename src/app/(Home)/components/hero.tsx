@@ -42,7 +42,7 @@ export function Hero() {
           src="/shape-tec.svg"
           width={1189}
           height={1140}
-          loading="lazy"
+          loading={"eager"}
           alt={"/shape-tec.svg"}
         ></Image>
       </TextMotion>
@@ -56,7 +56,7 @@ export function Hero() {
         src="/shape-up.png"
         width={1440}
         height={252}
-        loading="lazy"
+        loading="eager"
         alt={"font de la section hero"}
       ></Image>
       {/* </TextMotion> */}
