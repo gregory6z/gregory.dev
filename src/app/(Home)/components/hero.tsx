@@ -52,7 +52,7 @@ export function Hero() {
         transition={{ duration: 2 }}
       > */}
       <Image
-        className="top absolute hidden h-[23vh] w-full object-cover lg:block  "
+        className="top absolute hidden  h-[23vh] w-full object-cover lg:block  "
         src="/shape-up.png"
         width={1440}
         height={252}
@@ -113,10 +113,10 @@ export function Hero() {
                 </h2>
               </TextMotion>
               <TextMotion variants={item} className="lg:w-[60%] ">
-                <span className="text-pretty text-base opacity-60 sm:text-lg lg:text-xl ">
+                <p className="text-pretty text-base opacity-60 sm:text-lg lg:text-xl ">
                   Créer des sites web qui attirent l'attention et génèrent des
                   résultats
-                </span>
+                </p>
               </TextMotion>
               <Link
                 href={"https://form.jotform.com/233487539279069"}
