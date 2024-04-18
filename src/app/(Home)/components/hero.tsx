@@ -27,25 +27,15 @@ export function Hero() {
 
   return (
     <div className="relative h-screen w-full overflow-hidden border-b border-gray-800">
-      <TextMotion
-        initial={{ scaleX: 0.5, opacity: 0 }}
-        animate={{ scaleX: 1, opacity: 1 }}
-        transition={{
-          type: "spring",
-          stiffness: 200,
-          damping: 30,
-          delay: 0.5,
-        }}
-      >
-        <Image
-          className=" tall:min-h-[60vw]  absolute -right-[40%] min-w-[700px]   animate-[spinCustom_50s_linear_infinite] rounded-full object-bottom lg:-right-[30%] lg:min-w-[60vw] xl:-right-[10%] xl:min-w-[70vw] "
-          src="/shape-tec.svg"
-          width={1189}
-          height={1140}
-          loading={"eager"}
-          alt={"/shape-tec.svg"}
-        ></Image>
-      </TextMotion>
+      <Image
+        className=" tall:min-h-[60vw]  absolute -right-[40%] min-w-[700px]   animate-[spinCustom_50s_linear_infinite] rounded-full object-bottom lg:-right-[30%] lg:min-w-[60vw] xl:-right-[10%] xl:min-w-[70vw] "
+        src="/shape-tec.svg"
+        width={1189}
+        height={1140}
+        loading={"eager"}
+        alt={"/shape-tec.svg"}
+      ></Image>
+
       {/* <TextMotion
         initial={{ translateY: "-100%", opacity: 0 }}
         animate={{ translateY: "0%", opacity: 1 }}
