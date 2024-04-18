@@ -52,7 +52,7 @@ export function Hero() {
         transition={{ duration: 2 }}
       > */}
       <Image
-        className="top absolute h-[23vh] w-full object-cover  "
+        className="top absolute hidden h-[23vh] w-full object-cover lg:block  "
         src="/shape-up.png"
         width={1440}
         height={252}
@@ -62,7 +62,7 @@ export function Hero() {
       {/* </TextMotion> */}
 
       <Image
-        className=" bottom absolute bottom-0 h-[23vh] w-full  object-cover  "
+        className=" bottom absolute bottom-0 hidden h-[23vh] w-full object-cover  lg:block  "
         src="/shape-down.png"
         width={1440}
         loading="eager"
