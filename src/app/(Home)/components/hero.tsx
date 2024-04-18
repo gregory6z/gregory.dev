@@ -66,7 +66,7 @@ export function Hero() {
         src="/shape-down.png"
         width={1440}
         height={252}
-        alt={""}
+        alt={"background de la section hero"}
       ></Image>
 
       {/* elipse-left-down */}

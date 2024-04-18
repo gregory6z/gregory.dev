@@ -8,16 +8,16 @@ export function Projets() {
         src="/shape-up.png"
         width={1440}
         height={252}
-        alt={""}
+        alt={"background de la section projets"}
         loading="lazy"
       ></Image>
       <Image
         className=" bottom absolute bottom-0 h-[23vh] w-full  object-cover  "
         src="/shape-down.png"
         width={1440}
-        loading="lazy"
+        loading="eager"
         height={252}
-        alt={""}
+        alt={"background de la section projets"}
       ></Image>
       <div className=" flex h-full w-full flex-col px-[1.125rem]   lg:mx-auto    lg:mt-0 lg:flex lg:max-w-[1225px]  lg:px-16 xl:px-0 ">
         <div className="my-20 flex flex-col lg:my-[10rem]">
@@ -43,7 +43,7 @@ export function Projets() {
               <div className="flex h-[12rem] items-end justify-center rounded-b-md bg-sky-950  lg:h-[22rem]  lg:min-w-[540px] lg:rounded-b-none lg:rounded-r-md ">
                 <Image
                   src="/paris.png"
-                  loading="lazy"
+                  loading="eager"
                   alt="projet paris investissements"
                   className="  object-scale h-[80%] w-[92%] rounded-t-md  object-cover object-left-top "
                   width={720}
@@ -82,7 +82,7 @@ export function Projets() {
                 <Image
                   src="/va-beauty.png"
                   alt="projet va beauty"
-                  loading="lazy"
+                  loading="eager"
                   className="  object-scale h-[80%] w-[92%]  rounded-t-md  object-cover object-left-top "
                   width={1080}
                   height={980}
@@ -110,8 +110,8 @@ export function Projets() {
               <div className="flex h-[12rem] items-end justify-center rounded-b-md bg-sky-950  lg:h-[22rem]  lg:min-w-[540px] lg:rounded-b-none lg:rounded-r-md ">
                 <Image
                   src="/ignite-call.png"
-                  loading="lazy"
-                  alt=""
+                  loading="eager"
+                  alt="projet ignite call"
                   className="  object-scale h-[80%] w-[92%]  rounded-t-md  object-cover object-left-top "
                   width={1080}
                   height={980}

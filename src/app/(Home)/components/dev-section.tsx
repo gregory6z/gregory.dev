@@ -10,7 +10,7 @@ export function DevSection() {
         src="/tecback.webp"
         width={1440}
         height={252}
-        loading="lazy"
+        loading="eager"
         alt={"image de fond de la section développement web"}
         quality={100}
       ></Image>
@@ -97,6 +97,7 @@ export function DevSection() {
           </div>
           <Link
             href={"https://form.jotform.com/233487539279069"}
+            title="formulaire de contact de gregory praxedes"
             className=" mt-16 flex items-center justify-center gap-2 rounded-md bg-sky-600 px-10 py-4 text-lg font-semibold text-white-blue/90 transition-all hover:bg-sky-700 lg:mx-auto lg:mt-16 lg:max-w-[360px]"
           >
             Démarrez avec un devis!

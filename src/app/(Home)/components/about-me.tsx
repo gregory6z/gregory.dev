@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function AboutMe() {
   return (
-    <div className="h-full min-h-screen w-full ">
+    <main className="h-full min-h-screen w-full ">
       <div className=" mb-[10rem] flex  h-full w-full px-[1.125rem]  lg:mx-auto lg:mb-[0rem] lg:flex lg:max-w-[1225px]  lg:px-16 xl:px-0 ">
         <div className="mt-[5rem] flex flex-col gap-16 lg:mt-[10rem]  lg:flex-row  lg:items-center lg:gap-8">
           <div className="flex flex-1 flex-col  gap-8">
@@ -49,7 +49,7 @@ export function AboutMe() {
               width={458}
               height={600}
               placeholder="blur"
-              loading="lazy"
+              loading="eager"
               blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IiNGRkYiLz4KPHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9InVybCgjZ3JhZCkiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMjgiIHkxPSIwIiB4Mj0iMTI4IiB5Mj0iMjU2Ij4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlJSIgc3RvcC1jb2xvcj0iIzAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K"
             ></Image>
             <Image
@@ -57,12 +57,12 @@ export function AboutMe() {
               src="/selo.svg"
               alt="timbre Gregory Praxedes"
               width={260}
-              loading="lazy"
+              loading="eager"
               height={260}
             ></Image>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }

@@ -12,8 +12,8 @@ export function Footer() {
               className="mx-auto"
               width="80"
               height={80}
-              loading="lazy"
-              alt={""}
+              loading="eager"
+              alt={"profile-pic de gregory praxedes"}
             ></Image>
             <div className="flex flex-col gap-4">
               <h1 className="text-3xl text-white-blue/90 lg:text-5xl">
@@ -21,6 +21,7 @@ export function Footer() {
               </h1>
               <Link
                 href={"https://form.jotform.com/233487539279069"}
+                title="formulaire de contact de gregory praxedes"
                 className=" mx-auto  mt-6 flex items-center justify-center gap-4 rounded-md bg-sky-600 px-10 py-4 text-lg font-semibold text-white-blue/90 transition-all hover:bg-sky-700  lg:max-w-[320px]"
               >
                 Allons-y ? <span>😀</span>
@@ -40,6 +41,7 @@ export function Footer() {
               href={"https://www.instagram.com/prax6z/"}
               target="_blank"
               className="transition-all hover:text-sky-600"
+              title="instagram de gregory praxedes"
             >
               <Instagram width={40} height={40}></Instagram>
             </Link>
@@ -47,6 +49,7 @@ export function Footer() {
               className="transition-all hover:text-sky-600"
               target="_blank"
               href={"https://www.linkedin.com/in/gregory-praxedes-2189b4207/"}
+              title="linkedin de gregory praxedes"
             >
               <Linkedin width={40} height={40}></Linkedin>
             </Link>
@@ -54,6 +57,7 @@ export function Footer() {
               href={"https://github.com/gregory6z/"}
               target="_blank"
               className="transition-all hover:text-sky-600"
+              title="github de gregory praxedes"
             >
               <Github width={40} height={40}></Github>
             </Link>
