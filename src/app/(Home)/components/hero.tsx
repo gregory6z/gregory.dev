@@ -65,6 +65,7 @@ export function Hero() {
         className=" bottom absolute bottom-0 h-[23vh] w-full  object-cover  "
         src="/shape-down.png"
         width={1440}
+        loading="eager"
         height={252}
         alt={"background de la section hero"}
       ></Image>
@@ -78,6 +79,7 @@ export function Hero() {
           src="/logo.svg"
           width={72}
           height={72}
+          loading="eager"
           alt={"logo de gregory praxedes"}
         ></Image>
       </header>
@@ -88,6 +90,7 @@ export function Hero() {
             src="/profile-pic.png"
             width={86}
             height={86}
+            loading="eager"
             alt={"photo de profil de gregory praxedes"}
           ></Image>
 
